@@ -148,7 +148,7 @@ def shoe_size(name)
 end
 
 def colors 
-  game_hash[:home][colors]
+  game_hash[:home][:colors].concat game_hash[:away][:colors]
 
 def team_colors(team)
   game_hash.each do |key, value|
