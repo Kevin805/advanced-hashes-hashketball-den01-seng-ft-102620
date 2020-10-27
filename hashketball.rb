@@ -149,6 +149,8 @@ end
 
 def colors 
   game_hash[:home][:colors].concat game_hash[:away][:colors]
+end
+
 
 def team_colors(team)
   game_hash.each do |key, value|
