@@ -148,9 +148,9 @@ def shoe_size(name)
 end
 
 def team_colors(team)
-  if team == "Charlotte Hornets" 
-    return game_hash[:away][:colors]
-  else return game_hash[:home][:colors]
+  game_hash.each do |team, team_info|
+    if team_info[:team_name] == team_name
+   return game_hash[:home][:colors]
   end
 end
 
